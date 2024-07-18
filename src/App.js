@@ -17,7 +17,7 @@ function App() {
         <Routes>
           {/* <AddKeeper keeperList={keeperList} setKeeperList={setKeeperList} /> */}
           <Route path="/show-tasks" element={<ShowKeeper keeperList={keeperList} setKeeperList={setKeeperList} />} />
-          <Route path="/" element={<AddKeeper setKeeperList={setKeeperList} />} />
+          <Route path="/TaskManager" element={<AddKeeper setKeeperList={setKeeperList} />} />
           {/* <ShowKeeper keeperList={keeperList} setKeeperList={setKeeperList} /> */}
           <Route path="/about" element={<About/>}/>
         </Routes>
