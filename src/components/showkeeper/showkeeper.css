@@ -1,0 +1,103 @@
+.showKeeper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    margin-top: 150px;
+}
+
+.keeperCard {
+    background: rgb(0, 0, 0);
+    color: rgb(82, 171, 240);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 21%;
+    max-width: 21%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keeperCard:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.6) 15px 15px 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Texturina', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.deleteIcon {
+    color: rgb(255, 69, 69);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.editIcon {
+    color: blue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+}
+.editIcon:hover {
+    color: yellow;
+}
+.deleteIcon:hover {
+    color: rgb(255, 0, 0);
+}
+
+.descriptionBox {
+    background: rgb(76, 76, 77);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    color: rgb(102, 201, 156);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1rem;
+    resize: none;
+    min-height: 100px;
+    outline: none;
+}
+
+@media (max-width: 1200px) {
+    .keeperCard {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .keeperCard {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .descriptionBox {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .keeperCard {
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .descriptionBox {
+        font-size: 0.9rem;
+    }
+}
